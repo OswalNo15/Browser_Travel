@@ -1,0 +1,71 @@
+Inicio
+    Definir estructura Cliente
+        Identificación 
+        PrimerNombre
+        SegundoNombre
+        PrimerApellido
+        SegundoApellido
+        Genero
+        FechaNacimiento
+        Edad
+        Dirección
+        Teléfono
+        TipoIdentificacion
+        Ciudad
+    Fin Estructura
+
+    Definir estructura Vehículo
+        IdVehiculo
+        Marca
+        Modelo
+		Color
+		Placa
+        Kilometraje
+        Activo
+    Fin Estructura
+	
+    Definir Lista de vehículos disponibles
+
+    Función listarVehículosDisponibles()
+        Para cada vehículo en Lista de vehículos disponibles
+            Mostrar información del vehículo (Marca, Modelo, Año, Tipo, Precio)
+        Fin Para
+    Fin Función
+
+    Función almacenarInformacionCliente(cliente)
+        // Aquí se almacena la información del cliente en la base de datos o en alguna estructura de datos
+    Fin Función
+
+    Función realizarReserva(cliente, vehículo)
+        // Aquí se registra la reserva del vehículo para el cliente
+    Fin Función
+
+    Función finalizarRenta(cliente, vehículo)
+        // Aquí se finaliza la renta del vehículo para el cliente y se realiza el cobro correspondiente
+    Fin Función
+
+    // Programa principal
+    Cliente clienteNuevo
+    Vehículo vehículoSeleccionado
+
+    // Obtener información del cliente
+    Leer clienteNuevo.Nombre
+    Leer clienteNuevo.Apellido
+    Leer clienteNuevo.Dirección
+    Leer clienteNuevo.Teléfono
+
+    // Mostrar vehículos disponibles
+    listarVehículosDisponibles()
+
+    // El cliente selecciona un vehículo
+    Leer vehículoSeleccionado
+
+    // Almacenar información del cliente
+    almacenarInformacionCliente(clienteNuevo)
+
+    // Realizar reserva del vehículo seleccionado
+    realizarReserva(clienteNuevo, vehículoSeleccionado)
+
+    // Finalizar renta del vehículo seleccionado
+    finalizarRenta(clienteNuevo, vehículoSeleccionado)
+Fin
